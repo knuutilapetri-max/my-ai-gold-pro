@@ -18,11 +18,13 @@ jobs:
           unzip MY_AI_GOLD_PRO_v66_ANDROID_STUDIO_PROJECT.zip -d android-project
 
       - uses: actions/setup-java@v4
-        with:
+         with:
           distribution: temurin
           java-version: '17'
 
       - uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
 
       - name: Install Android SDK
         run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
