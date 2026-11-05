@@ -18,7 +18,7 @@ jobs:
           unzip MY_AI_GOLD_PRO_v66_ANDROID_STUDIO_PROJECT.zip -d android-project
 
       - uses: actions/setup-java@v4
-         with:
+        with:
           distribution: temurin
           java-version: '17'
 
