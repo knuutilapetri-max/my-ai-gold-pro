@@ -1,4 +1,4 @@
-okname: Build MY AI GOLD PRO Release APK
+name: Build MY AI GOLD PRO Release APK
 
 on:
   workflow_dispatch:
