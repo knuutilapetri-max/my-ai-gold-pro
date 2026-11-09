@@ -16,7 +16,7 @@ jobs:
       - name: Extract Android project archive
         run: |
           mkdir -p android-project
-                    unzip -q MY_AI_GOLD_PRO_v68_CALENDAR_DATE_FIX.zip -d android-project
+                    unzip -q MY_AI_GOLD_PRO_v69_FINNHUB_ENTRY_TP_SL.zip -d android-project
           test -f android-project/app/build.gradle.kts
           test -f android-project/app/src/main/AndroidManifest.xml
 
