@@ -15,7 +15,7 @@ jobs:
       - name: Extract project
         run: |
           mkdir android-project
-          unzip  MY_AI_GOLD_PRO_v70_GITHUB_READY.zip -d android-project
+          unzip  MY_AI_GOLD_PRO_v70_ECONOMIC_CALENDAR_AI.zip -d android-project
 
       - uses: actions/setup-java@v4
         with:
