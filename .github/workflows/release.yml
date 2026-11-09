@@ -63,7 +63,7 @@ jobs:
       - name: Upload signed release APK
         uses: actions/upload-artifact@v4
         with:
-          name: name: MY-AI-GOLD-PRO-v70-RELEASE-APK
+          name: MY-AI-GOLD-PRO-v70-RELEASE-APK
           path: android-project/app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
           retention-days: 30
