@@ -1,6 +1,5 @@
 name: Build MY AI GOLD PRO Release APK
-
-on:
+on: 
   workflow_dispatch:
 
 permissions:
@@ -16,7 +15,7 @@ jobs:
       - name: Extract Android project archive
         run: |
           mkdir -p android-project
-          unzip -q   MY_AI_GOLD_PRO_v72_ENTRY_ALERTS_BRENT.zip -d android-project
+          unzip -q MY_AI_GOLD_PRO_v73_FREE_FIRST_RATE_LIMIT_BRENT.zip -d android-project
           test -f android-project/app/build.gradle.kts
           test -f android-project/app/src/main/AndroidManifest.xml
 
@@ -63,7 +62,7 @@ jobs:
       - name: Upload signed release APK
         uses: actions/upload-artifact@v4
         with:
-          name: MY-AI-GOLD-PRO-v72-RELEASE-APK
+          name: MY-AI-GOLD-PRO-v73-RELEASE-APK
           path: android-project/app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
           retention-days: 30
